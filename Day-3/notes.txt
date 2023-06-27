@@ -1,0 +1,33 @@
+1. Copy by value and Copy Reference
+2. Array
+3. JSON
+4. JSON parsing, iteration
+5. Scope
+6. Hoisting
+7. XMLHttpRequest
+
+
+Copy by Value:
+
+1. All the primitive data types in JavaScript are Copy by Value.(string, number, boolean)
+2. Changing the value of a variable never changes the underlying primitive variable, 
+    it just points to new memory location.
+
+Copy by Reference:
+
+1. All the nom - primitive data types in JavaScript are Copy by Ref.(Object, Arrays)
+2. Changing the value of a variable changes the value underlying primitive variable, 
+    it points to same memory location.
+
+Hoisting:
+
+All the variables and functions whixh are declared globally are
+moved at the top and remembered by the compiler.
+
+Scope:
+
+It provides code security and helps to debug code faster and 
+more efficiently.
+
+Local: Anything inside a function is in its local scope.
+Global: Anything not inside any function is in its global scope
