@@ -17,11 +17,10 @@
       xhr.onload = function () {
         if (xhr.status === 200) {
           //Request was successful
-          debugger;
           console.log(xhr.responseText);
           var countriesDetails = JSON.parse(xhr.responseText);
           for (var i = 0; i < countriesDetails.length; i++) {
-            console.log(countriesDetails[i].name.common);
+            console.log(countriesDetails[i].flag);
           }
         } else {
           //Request failed
