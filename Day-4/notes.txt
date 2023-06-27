@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+    //your JS code goes here
+    </script>
+  </body>
+</html>
