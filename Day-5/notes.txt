@@ -1,0 +1,31 @@
+1. let: Used to declare variables and let us to change the
+        value. It is block scoped. It is not hoisted to 
+        the top.
+2. const:Used to declare variables and do not allow to change 
+        the value. It is block scoped. It is not hoisted to 
+        the top.
+3. var:Used to declare variables and let us to change the
+        value. It is FUNCTION scoped. It is hoisted to 
+        the top.
+4. block scope: It refers to the scope of variables within all
+                block of code {}. let and const have block
+                scope.
+5. function scope: It refers to the scope of variabels declared
+                    inside a function. var have function scope.
+
+6. Array Destructuring:
+    --> It allows you to extract values from an array.
+    --> After extracting it will assign them to individual variables.
+    --> You can use [] on the left hand side of the assignment to
+        specify variables that will receive the corresponding values
+        from the array.
+
+7. Object Destructuring:
+    --> {}
+    --> Key name shuld be given as variable name.
+    --> Rest you can refer to Array destructuring!
+
+8. Object property shorthand:
+
+    --> It is a feature in JavaScript that allows you to create objects
+        using a shorter syntax.
