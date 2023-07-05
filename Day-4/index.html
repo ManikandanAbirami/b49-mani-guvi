@@ -20,8 +20,15 @@
           var countriesDetails = JSON.parse(xhr.responseText);
           console.log(countriesDetails);
           for (var i = 0; i < countriesDetails.length; i++) {
-            var name = Object.keys(countriesDetails[i].name.nativeName)[0];
-            console.log(countriesDetails[i].name.nativeName[name]);
+            // var name = Object.keys(countriesDetails[i].name.nativeName)[0];
+            // console.log(countriesDetails[i].name.nativeName[name]);
+            if (countriesDetails[i].currencies != undefined) {
+              Object.keys(countriesDetails[i].currencies).forEach((key) => {
+                if (key === "USD") {
+                  console.log(countriesDetails[i].currencies);
+                }
+              });
+            }
           }
         } else {
           //Request failed
