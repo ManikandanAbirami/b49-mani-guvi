@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <style>
+      input {
+        color: white;
+        background-color: brown;
+      }
+      label {
+        color: black;
+      }
+      #upload {
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body style="background-color: yellow">
+    <h1 style="color: dodgerblue; font-size: 30px">Application Form</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input id="name" type="text" />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input id="email" type="email" />
+      <br />
+      <br />
+      <label for="password">Password:</label>
+      <input id="password" type="password" />
+      <br />
+      <br />
+      <label for="dob">DOB:</label>
+      <input id="dob" type="date" />
+      <br />
+      <br />
+      <label id="gender">Gender:</label>
+      <input type="radio" name="gender" /> <label>Male</label>
+      <input type="radio" name="gender" /> <label>Female</label>
+      <input type="radio" name="gender" /> <label>Others</label>
+      <br />
+      <br />
+      <label for="upload">Upload Documents:</label>
+      <input id="upload" type="file" />
+      <br />
+      <br />
+      <label style="color: royalblue" id="city">City:</label>
+      <select>
+        <option>Chennai</option>
+        <option>Madurai</option>
+        <option>Trichy</option>
+      </select>
+      <br />
+      <br />
+      <input type="submit" value="Save" />
+      <input type="reset" value="Cancel" />
+    </form>
+  </body>
+</html>
