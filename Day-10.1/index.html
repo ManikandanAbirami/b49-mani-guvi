@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS GRID Demo</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border: 1px solid black;
+        background-color: aquamarine;
+        padding: 10px;
+      }
+      .item {
+        border: 1px solid black;
+        background-color: brown;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+      }
+      .flex-container {
+        display: flex;
+        /* flex-direction: column-reverse; */
+        /* flex-wrap: wrap; */
+        flex-flow: column wrap;
+        /* justify-content: end; */
+        align-content: end;
+        border: 1px solid black;
+        background-color: aquamarine;
+        padding: 10px;
+      }
+      .flex-item {
+        flex: 0 0 auto;
+        margin: 10px;
+        border: 1px solid black;
+        background-color: brown;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid Demo!!!!</h1>
+    <div class="container">
+      <div class="item" style="grid-column: 3; grid-row: 2">Item 1</div>
+      <div class="item" style="grid-column: 1; grid-row: 2">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+    <h1>CSS Flex Demo!!!!</h1>
+    <div class="flex-container">
+      <div class="flex-item">Flex Item 1</div>
+      <div class="flex-item">Flex Item 2</div>
+      <div class="flex-item">Flex Item 3</div>
+    </div>
+  </body>
+</html>
