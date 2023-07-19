@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid black;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">Parent Div</div>
+    <script>
+      //Create a new element and set its attributes
+      const ele = document.createElement("div");
+      ele.setAttribute("id", "riyaz");
+      ele.setAttribute("class", "riyasClass");
+
+      //Set the text content of the new element
+      ele.innerText = "Hello, welcome to B49 WD Tamil batch!!!";
+      //   const parentEle = document.getElementById("parent");
+      //   parentEle.appendChild(ele);
+
+      const para = document.createElement("p");
+
+      para.innerHTML = `<span style="color: blue">HELLOOOO!!!!!</span>`;
+      //   para.innerText = "Manikandan Anabalagan!!!";
+      //   parentEle.appendChild(para);
+
+      const ach = document.createElement("a");
+      //id = "main", class = "mainDiv"
+      //setAttribute(name, value);
+      //setAttribute("id","main");
+      //setAttribute("class", "mainDiv");
+      //<a href="" target="_blank">Click me!!!</a>
+      ach.setAttribute("target", "_blank");
+      ach.setAttribute("href", "");
+      ach.innerText = "Click me!!!";
+      //   parentEle.appendChild(ach);
+
+      const parentEle = document.getElementById("parent");
+      parentEle.append(ele, para, "Test ", ach);
+    </script>
+  </body>
+</html>
