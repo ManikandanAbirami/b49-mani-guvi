@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="myform">
+        <label for="name">Name:</label>
+        <input id="name" type="text" />
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+
+        <label>Choice of food: </label>
+        <input type="checkbox" name="food" value="Pizza" /> Pizza
+        <input type="checkbox" name="food" value="Burger" /> Burger
+        <input type="checkbox" name="food" value="Pasta" /> Pasta
+        <input type="checkbox" name="food" value="Sushi" /> Sushi
+        <input type="checkbox" name="food" value="Salad" /> Salad
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Food</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
