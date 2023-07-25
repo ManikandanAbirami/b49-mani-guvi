@@ -10,6 +10,9 @@
       //Define HTTP method and URL
       var method = "GET";
       var url = "https://restcountries.com/v3.1/all";
+      var lat = -14.33333333;
+      var long = -170.0;
+      var urlWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=37ba9824a231c697643e4a57ef092cf6`;
 
       //Open the request
       xhr.open(method, url);
