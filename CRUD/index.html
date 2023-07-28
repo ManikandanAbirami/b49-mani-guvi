@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implementing CRUD using HTML, CSS & JavaScript</title>
+    <!-- Include Bootstrap CSS link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Implementing CRUD using HTML, CSS & JavaScript!!!!!</h1>
+      <form id="crudForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" class="form-control" id="age" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+      <table class="table mt-4">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="dataRows"></tbody>
+      </table>
+    </div>
+    <!-- Include Bootstrap and your custom JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
