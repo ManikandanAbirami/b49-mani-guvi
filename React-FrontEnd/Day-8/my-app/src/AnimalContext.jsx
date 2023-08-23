@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState} from "react";
+import React, { createContext, useState} from "react";
 
 // Create a context
 const AnimalContext = createContext();
@@ -10,7 +10,8 @@ function AnimalProvider({ children }) {
     const [age, setAge] = useState("32");
 
     return(
-        <AnimalContext.Provider value={{animalSound, setAnimalSound, age, setAge}}>
+        <AnimalContext.Provider 
+        value={{animalSound, setAnimalSound, age, setAge}}>
             {children}
         </AnimalContext.Provider>
     )
