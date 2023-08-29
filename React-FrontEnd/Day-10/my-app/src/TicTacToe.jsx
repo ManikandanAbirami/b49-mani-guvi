@@ -9,9 +9,12 @@ const initialGameState = {
 const gameReducer = (state, action) => {
     switch (action.type) {
         case 'MAKE_MOVE':
+            console.log("Action index: ", state.board[action.index])
+            console.log("Index Value: ", action.index)
             if(state.board[action.index] || state.winner)
                 return state;
             const updateBoard = [...state.board]; // It will take a copy and assign to updateBoard
+            console.log("Update Board: ", updateBoard);
             updateBoard[action.index] = state.currentPlayer; // Update the new click value
             return {
                 ...state,

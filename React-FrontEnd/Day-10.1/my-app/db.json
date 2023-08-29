@@ -1,0 +1,28 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Manikandan Anbalagan",
+      "age": "32",
+      "occupation": "Software Engineer",
+      "salary": "175000",
+      "Exp": 12
+    },
+    {
+      "id": 1,
+      "name": "Manikandan Anbalagan",
+      "age": "32",
+      "occupation": "Software Engineer",
+      "salary": "175000",
+      "Exp": 12
+    },
+    {
+      "id": 1,
+      "name": "Manikandan Anbalagan",
+      "age": "32",
+      "occupation": "Software Engineer",
+      "salary": "175000",
+      "Exp": 12
+    }
+  ]
+}
